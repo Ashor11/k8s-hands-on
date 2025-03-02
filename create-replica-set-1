@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name:  replica-set-1
+  labels:
+    app: replicaset
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: busybox
+  template:
+    metadata:
+      labels:
+        app: busybox
+    spec:
+      containers:
+      - name: busybox-app
+        image: busybox
+        command: ['sh', '-c', 'echo "Hello, Kubernetes IAM ASHOUR !" && sleep 3600']
+

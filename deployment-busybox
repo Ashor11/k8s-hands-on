@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-1
+  labels:
+    app: dep-busybox
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: busy
+  template:
+    metadata:
+      labels:
+        app: busy
+    spec:
+      containers:
+      - name:  busybox
+        image:  busybox
+        command: ['sh', '-c', 'echo "Hello, Kubernetes IAM ASHOUR !" && sleep 3600']
