@@ -3,9 +3,9 @@ This course covers hands-on labs (`laps`) to master Kubernetes (`k8s`). Each lap
 
 ## 📂 Course Structure
 1 **Lap 1: Setting Up Minikube**
-2 - Deploying Your First Pod**
-3 - Working with ReplicaSets**
-4 - Creating Deployments**
+- Deploying Your First Pod**
+- Working with ReplicaSets**
+- Creating Deployments**
 
 ---
 
