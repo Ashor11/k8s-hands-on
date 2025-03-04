@@ -8,13 +8,13 @@ To maintain clarity and organization, the repository is structured as follows:
 
 ```
 📦 lap3
- ┣ 📂 external-web-service
+ ┣ 📂 web-service-extrnal
  ┃ ┣ 📜 .yaml
- ┣ 📂 internal-web-test
+ ┣ 📂 web-internal-test
  ┃ ┣ 📜 .yaml
- ┣ 📂 daemonset
+ ┣ 📂 Daemonset
  ┃ ┣ 📜 .yaml
- ┣ 📂 theoretical-solutions
+ ┣ 📂 theoretical-ASN
  ┃ ┣ 📜 solutions.md
  ┗ 📜 README.md
 ```
