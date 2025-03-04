@@ -8,29 +8,29 @@ To maintain clarity and organization, the repository is structured as follows:
 ```
 📦 k8s-hands-on-guide
  ┣ 📂 limit-range
- ┃ ┣ 📜 limit-range.yaml
- ┃ ┣ 📷 limit-range-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 limits-requests
- ┃ ┣ 📜 limits-requests.yaml
- ┃ ┣ 📷 limits-requests-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 node-affinity
- ┃ ┣ 📜 node-affinity.yaml
- ┃ ┣ 📷 node-affinity-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 node-selector
- ┃ ┣ 📜 node-selector.yaml
- ┃ ┣ 📷 node-selector-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 resource-quota
- ┃ ┣ 📜 resource-quota.yaml
- ┃ ┣ 📷 resource-quota-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 taints-tolerations
- ┃ ┣ 📜 taints-tolerations.yaml
- ┃ ┣ 📷 taints-tolerations-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 namespaces
- ┃ ┣ 📜 namespace.yaml
- ┃ ┣ 📷 namespace-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┣ 📂 java-app
- ┃ ┣ 📜 java-app.yaml
- ┃ ┣ 📷 java-app-screenshot.png
+ ┃ ┣ 📜 .yaml
+ ┃ ┣ 📷 .png
  ┗ 📜 README.md
 ```
 
@@ -38,7 +38,7 @@ Each directory contains:
 - 📝 The corresponding **YAML configuration file**.
 - 📷 A **screenshot** showcasing the execution and application in Kubernetes.
 
-## 📌 Concepts Explained
+##  Concepts Explained
 
 ### 1️⃣ Default Limit Range
 A `LimitRange` is a policy that enforces minimum and maximum compute resources within a namespace. This ensures efficient resource allocation and prevents excessive consumption by any single pod.
