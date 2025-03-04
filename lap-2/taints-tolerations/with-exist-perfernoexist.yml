@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quota-mem-cpu-demo
+spec:
+  containers:
+  - name: quota-mem-cpu-demo-ctr
+    image: nginx
+  tolerations:
+    - key: "empkey"
+      operator: "Exists"
+      effect: "PreferNoSchedule"

@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quota-mem-cpu-demo
+spec:
+  containers:
+  - name: quota-mem-cpu-demo-ctr
+    image: nginx
+  tolerations:
+    - key: "env"
+      operator: "Equal"
+      value: "producttion"
+      effect: "NoSchedule"
+    - key: "anythingdumb"
+      operator: "Equal"
+      value: "cret"
+      effect: "NoSchedule"
