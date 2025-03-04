@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+    name: nscontroller
+spec:
+    hard:
+      count/deployments.apps: 1
+      requests.cpu: "0.5"
+      requests.memory: "200Mi"
+      limits.cpu: "1"
+      limits.memory: "500Mi"
+      pods: "10"

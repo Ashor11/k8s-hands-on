@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ubuntu
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: ubuntu  # This is required for Deployment to manage pods
+  template:
+    metadata:
+      labels:  # Labels should be inside metadata
+        app: ubuntu
+    spec:
+      containers:
+       - name: high-priority-ubuntu
+         image: ubuntu
+         command: ["/bin/sh"]
+         args: ["-c", "while true; do echo hello; sleep 10; done"]
+         resources:
+           requests:
+             memory: "100Mi"
+             cpu: "300m"  # Use "m" for millicores (0.3 = 300m)
+           limits:
+             memory: "220Mi"
+             cpu: "400m"  # Use "m" for consistency
