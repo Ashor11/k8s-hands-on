@@ -1,4 +1,4 @@
-# Kubernetes Hands-On Guide
+# Kubernetes part 2 Hands-On Guide
 
 This repository contains hands-on exercises for key Kubernetes concepts. Each section contains YAML configuration files along with screenshots demonstrating their application in a Kubernetes cluster.
 
