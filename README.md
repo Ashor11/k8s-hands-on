@@ -20,6 +20,13 @@ This course covers hands-on labs (`laps`) to master Kubernetes (`k8s`). Each lap
 - Namespaces
 - Running a Java App from Docker Hub in a Pod
 
+### **Lap 3:**
+- External Web Service (NodePort)
+- Internal Web Test (ClusterIP)
+- Testing Two Applications with Services
+- DaemonSet
+- Theoretical Questions and Solutions
+
 ## **Setting Up Minikube to Start**
 ```sh
 minikube start
