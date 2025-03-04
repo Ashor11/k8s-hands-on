@@ -28,26 +28,21 @@ Each directory contains:
 ### 1 External Web Service (NodePort)
 A `NodePort` service exposes an application externally by assigning a static port on each node in the cluster. This allows external users to access the application.
 
-📂 **Folder:** `external-web-service/`
-
 ---
 
 ### 2 Internal Web Test (ClusterIP)
 A `ClusterIP` service is used for internal communication between pods within a cluster. This is useful for microservices and backend applications that do not need external exposure.
 
-📂 **Folder:** `internal-web-test/`
 
 ---
 
 ### 3 DaemonSet
 A `DaemonSet` ensures that a specific pod runs on all (or some) nodes in the cluster. It is useful for logging, monitoring, and security applications that need to be present on every node.
 
-📂 **Folder:** `daemonset/`
 
 ---
 
 ### 4 Theoretical Questions and Solutions
 This section provides answers to theoretical Kubernetes questions related to service networking, resource management, and workload scheduling.
 
-📂 **Folder:** `theoretical-solutions/`
 
