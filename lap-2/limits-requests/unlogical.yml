@@ -1,0 +1,25 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bbjavaapp
+spec:
+  containers:
+  - name: app
+    image: ashor11/java_data_struct_app:v600
+    command: ["/bin/sh"]
+    stdin: true
+    tty: true
+    resources:
+      requests:
+        memory: "190Mi"  # not logical to assign more memory than the limits
+        cpu: "250m"
+      limits:
+        memory: "80Mi"
+        cpu: "500m"
+~                                                                                                                                                         
+~                                                                                                                                                         
+~                                                                                                                                                         
+~                                                                                                                                                         
+~                                                                                                                                                         
+~                                                                                                         
