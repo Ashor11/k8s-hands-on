@@ -27,6 +27,15 @@ This course covers hands-on labs (`laps`) to master Kubernetes (`k8s`). Each lap
 - DaemonSet
 - Theoretical Questions and Solutions
 
+### **Lap 4:**
+- Persistent Volume (PV) and Persistent Volume Claim (PVC)
+- Environment Variables
+- ConfigMap
+- Secret with MySQL
+- Theoretical Questions and Solutions
+- Init Container
+- Multi-Container Pods
+
 ## **Setting Up Minikube to Start**
 ```sh
 minikube start
