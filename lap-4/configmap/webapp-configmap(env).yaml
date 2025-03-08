@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ebapp-color
+  labels:
+      app: MyApp
+spec:
+  containers:
+    - name: app
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: webapp-config-map
+      ports:
+         - containerPort: 80
