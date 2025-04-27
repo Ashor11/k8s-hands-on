@@ -1,0 +1,20 @@
+ETCDCTL_API=3 \
+ETCD_ENDPOINTS="https://127.0.0.1:2379" \
+ETCD_CERT="/etc/kubernetes/pki/etcd/server.crt" \
+ETCD_KEY="/etc/kubernetes/pki/etcd/server.key" \
+ETCD_CA_CERT="/etc/kubernetes/pki/etcd/ca.crt" \
+etcdctl snapshot save /backup/etcd-snapshot.db
+
+ETCDCTL_API=3 \
+ETCD_ENDPOINTS="https://127.0.0.1:2379" \
+ETCD_CERT="/etc/kubernetes/pki/etcd/server.crt" \
+ETCD_KEY="/etc/kubernetes/pki/etcd/server.key" \
+ETCD_CA_CERT="/etc/kubernetes/pki/etcd/ca.crt" \
+etcdctl snapshot restore /backup/etcd-snapshot.db \
+  --name=controlplane \
+  --data-dir=/var/lib/etcd-restored \
+  --initial-cluster=controlplane=https://127.0.0.1:2380 \
+  --initial-cluster-token=etcd-cluster-1 \
+  --initial-advertise-peer-urls=https://127.0.0.1:2380
+
+" change the data-dir volume in the etcd mainfiset file "
