@@ -7,21 +7,21 @@ To maintain clarity and organization, the repository is structured as follows:
 
 📦 k8s-lap5
  ┣ 📂 etcd
- ┃ ┣ 📜 shell.txt
- ┣ 📂 ingress
- ┃ ┣ 📜 ingress.yaml
- ┃ ┣ 📜 commands.txt
+ ┃ └── 📜 shell.txt
  ┣ 📂 gateway
- ┃ ┣ 📜 Gateway-GatewayClass-httproute-.yaml
- ┃ ┣ 📜 shell.txt
+ ┃ ├── 📜 Gateway-GatewayClass-httproute-.yaml
+ ┃ └── 📜 shell.txt
  ┣ 📂 hpa
- ┃ ┣ 📜 hpa.yaml
- ┃ ┣ 📜 shell.txt
+ ┃ ├── 📜 hpa.yaml
+ ┃ └── 📜 shell.txt
+ ┣ 📂 ingress
+ ┃ ├── 📜 commands.txt
+ ┃ └── 📜 ingress.yaml
  ┣ 📂 metrics-server-vpa
- ┃ ┣ 📜 install matric server.txt
- ┃ ┗ 📜 vpa-installation.txt
- ┃ ┗ 📜 VPA-resource.yaml
- ┗ 📜 README.md
+ ┃ ├── 📜 install matric server.txt
+ ┃ ├── 📜 vpa-installation.txt
+ ┃ └── 📜 VPA-resource.yaml
+ └── 📜 README.md
 
 
 
