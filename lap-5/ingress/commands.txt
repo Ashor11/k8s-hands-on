@@ -1,0 +1,5 @@
+k create deployment nginx --image=nginx --port=80 
+
+k expose deployment nginx --port=80 --name=my-app
+
+k apply -f ingress.yaml
