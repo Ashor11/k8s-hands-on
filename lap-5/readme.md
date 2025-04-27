@@ -5,6 +5,7 @@ This repository contains hands-on exercises for key Kubernetes concepts in Lap 5
 ## 📂 Folder Structure
 To maintain clarity and organization, the repository is structured as follows:
 
+```
 📦 k8s-lap5
  ┣ 📂 etcd
  ┃ └── 📜 shell.txt
@@ -22,8 +23,7 @@ To maintain clarity and organization, the repository is structured as follows:
  ┃ ├── 📜 vpa-installation.txt
  ┃ └── 📜 VPA-resource.yaml
  └── 📜 README.md
-
-
+```
 
 Each directory contains:
 - 📝 The corresponding **YAML configuration file(s) or script(s)**.
