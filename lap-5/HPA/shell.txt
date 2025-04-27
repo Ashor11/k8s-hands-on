@@ -1,0 +1,1 @@
+k create deployment nginx --image=nginx
