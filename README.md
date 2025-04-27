@@ -36,6 +36,20 @@ This course covers hands-on labs (`laps`) to master Kubernetes (`k8s`). Each lap
 - Init Container
 - Multi-Container Pods
 
+### **Lap 5:**
+- **Exploring `etcd`:**
+    - Saving an `etcd` Snapshot
+    - Examining `etcd` Data Directory
+- **Working with Ingress:**
+    - Deploying a Basic Ingress
+- **Exploring Gateway API:**
+    - Deploying Gateway API Resources
+- **Horizontal Pod Autoscaling (HPA):**
+    - Implementing Horizontal Pod Autoscaling
+- **Monitoring with Metrics Server & Vertical Pod Autoscaling (VPA):**
+    - Installing Metrics Server
+    - Implementing Vertical Pod Autoscaling
+
 ## **Setting Up Minikube to Start**
 ```sh
 minikube start
